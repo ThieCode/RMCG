@@ -1,0 +1,795 @@
+fileFormatVersion: 2
+guid: e0302425a690fb9429e8509d5b8e9bd3
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: fruits-set-white-fruits-including-apple-lemon-raspberry-grape-orange-plum-coconut-pineapple-white-currant-strawberry-banana-pomegranat-blackberry-melon-fig-lime-pear-cherry-kiwi_0
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 1615
+        width: 197
+        height: 295
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 347c230ab510a34438136841393ac943
+      internalID: -1948650032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fruits-set-white-fruits-including-apple-lemon-raspberry-grape-orange-plum-coconut-pineapple-white-currant-strawberry-banana-pomegranat-blackberry-melon-fig-lime-pear-cherry-kiwi_1
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 1663
+        width: 190
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cff0dd73b0404a14587ed5310a88ff0e
+      internalID: -755800026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fruits-set-white-fruits-including-apple-lemon-raspberry-grape-orange-plum-coconut-pineapple-white-currant-strawberry-banana-pomegranat-blackberry-melon-fig-lime-pear-cherry-kiwi_2
+      rect:
+        serializedVersion: 2
+        x: 759
+        y: 1633
+        width: 170
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7da87cde44bba924c970c5835caf4435
+      internalID: 197855542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fruits-set-white-fruits-including-apple-lemon-raspberry-grape-orange-plum-coconut-pineapple-white-currant-strawberry-banana-pomegranat-blackberry-melon-fig-lime-pear-cherry-kiwi_3
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 1663
+        width: 316
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a0cd7ead8c9273489bd5667953345b7
+      internalID: -1619464124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fruits-set-white-fruits-including-apple-lemon-raspberry-grape-orange-plum-coconut-pineapple-white-currant-strawberry-banana-pomegranat-blackberry-melon-fig-lime-pear-cherry-kiwi_4
+      rect:
+        serializedVersion: 2
+        x: 1383
+        y: 1632
+        width: 236
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51b0b3a92304c7347a2d34e6309f144d
+      internalID: 442598627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fruits-set-white-fruits-including-apple-lemon-raspberry-grape-orange-plum-coconut-pineapple-white-currant-strawberry-banana-pomegranat-blackberry-melon-fig-lime-pear-cherry-kiwi_5
+      rect:
+        serializedVersion: 2
+        x: 1723
+        y: 1638
+        width: 166
+        height: 248
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7519c75de54cec47a8de481c6ad63b7
+      internalID: 1248059492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fruits-set-white-fruits-including-apple-lemon-raspberry-grape-orange-plum-coconut-pineapple-white-currant-strawberry-banana-pomegranat-blackberry-melon-fig-lime-pear-cherry-kiwi_6
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 1261
+        width: 306
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6beab9725f7cbf045a2b6cde7ee90d93
+      internalID: 990867845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fruits-set-white-fruits-including-apple-lemon-raspberry-grape-orange-plum-coconut-pineapple-white-currant-strawberry-banana-pomegranat-blackberry-melon-fig-lime-pear-cherry-kiwi_7
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 1172
+        width: 205
+        height: 372
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae2676b01ac95254f8f2e0b1aaf89ff2
+      internalID: -1541161246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fruits-set-white-fruits-including-apple-lemon-raspberry-grape-orange-plum-coconut-pineapple-white-currant-strawberry-banana-pomegranat-blackberry-melon-fig-lime-pear-cherry-kiwi_8
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 1288
+        width: 278
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53d7e4f663daab441bf9a0e25e1d39e0
+      internalID: -1075417465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fruits-set-white-fruits-including-apple-lemon-raspberry-grape-orange-plum-coconut-pineapple-white-currant-strawberry-banana-pomegranat-blackberry-melon-fig-lime-pear-cherry-kiwi_9
+      rect:
+        serializedVersion: 2
+        x: 1067
+        y: 1236
+        width: 163
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee52d00af57152a41b04853a88ff1dd9
+      internalID: -1969346244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fruits-set-white-fruits-including-apple-lemon-raspberry-grape-orange-plum-coconut-pineapple-white-currant-strawberry-banana-pomegranat-blackberry-melon-fig-lime-pear-cherry-kiwi_10
+      rect:
+        serializedVersion: 2
+        x: 1403
+        y: 1211
+        width: 196
+        height: 295
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65aa4754dee0a4e47b2c716867339a6d
+      internalID: -80786730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fruits-set-white-fruits-including-apple-lemon-raspberry-grape-orange-plum-coconut-pineapple-white-currant-strawberry-banana-pomegranat-blackberry-melon-fig-lime-pear-cherry-kiwi_11
+      rect:
+        serializedVersion: 2
+        x: 1653
+        y: 1221
+        width: 307
+        height: 273
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff93e5b7860236f48a0fe2980525dc0b
+      internalID: -564346917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fruits-set-white-fruits-including-apple-lemon-raspberry-grape-orange-plum-coconut-pineapple-white-currant-strawberry-banana-pomegranat-blackberry-melon-fig-lime-pear-cherry-kiwi_12
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 889
+        width: 324
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0290a2dfe44e7f4b90b73e98fc59b52
+      internalID: -1658198141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fruits-set-white-fruits-including-apple-lemon-raspberry-grape-orange-plum-coconut-pineapple-white-currant-strawberry-banana-pomegranat-blackberry-melon-fig-lime-pear-cherry-kiwi_13
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 873
+        width: 196
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b770d719163b97f4890836fdc6ac0ae8
+      internalID: -572669910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fruits-set-white-fruits-including-apple-lemon-raspberry-grape-orange-plum-coconut-pineapple-white-currant-strawberry-banana-pomegranat-blackberry-melon-fig-lime-pear-cherry-kiwi_14
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 853
+        width: 169
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf7b871f094aacd4d97431d313e7d1b0
+      internalID: 62280663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fruits-set-white-fruits-including-apple-lemon-raspberry-grape-orange-plum-coconut-pineapple-white-currant-strawberry-banana-pomegranat-blackberry-melon-fig-lime-pear-cherry-kiwi_15
+      rect:
+        serializedVersion: 2
+        x: 1010
+        y: 871
+        width: 325
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d94f8f1b251021d428ab5d2a81c23fa5
+      internalID: 1345371089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fruits-set-white-fruits-including-apple-lemon-raspberry-grape-orange-plum-coconut-pineapple-white-currant-strawberry-banana-pomegranat-blackberry-melon-fig-lime-pear-cherry-kiwi_16
+      rect:
+        serializedVersion: 2
+        x: 1414
+        y: 878
+        width: 174
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bceb9a351202cf4c8cff562a95553af
+      internalID: -592535592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fruits-set-white-fruits-including-apple-lemon-raspberry-grape-orange-plum-coconut-pineapple-white-currant-strawberry-banana-pomegranat-blackberry-melon-fig-lime-pear-cherry-kiwi_17
+      rect:
+        serializedVersion: 2
+        x: 1666
+        y: 912
+        width: 278
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c9d1235952b5834aa1ce8008078ab78
+      internalID: -285109740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fruits-set-white-fruits-including-apple-lemon-raspberry-grape-orange-plum-coconut-pineapple-white-currant-strawberry-banana-pomegranat-blackberry-melon-fig-lime-pear-cherry-kiwi_18
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 467
+        width: 153
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a9515b9c6458634b906653fd512a544
+      internalID: 2140606544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fruits-set-white-fruits-including-apple-lemon-raspberry-grape-orange-plum-coconut-pineapple-white-currant-strawberry-banana-pomegranat-blackberry-melon-fig-lime-pear-cherry-kiwi_19
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 514
+        width: 186
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d29b7a5593383be4a9a6e27749b8241c
+      internalID: 1789494582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fruits-set-white-fruits-including-apple-lemon-raspberry-grape-orange-plum-coconut-pineapple-white-currant-strawberry-banana-pomegranat-blackberry-melon-fig-lime-pear-cherry-kiwi_20
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 473
+        width: 311
+        height: 261
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9046cc3ba26664458104ba56d5352a7
+      internalID: -2058090437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fruits-set-white-fruits-including-apple-lemon-raspberry-grape-orange-plum-coconut-pineapple-white-currant-strawberry-banana-pomegranat-blackberry-melon-fig-lime-pear-cherry-kiwi_21
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 456
+        width: 186
+        height: 295
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7083dc9514401f43bbd0cc51599c29c
+      internalID: -2090916155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fruits-set-white-fruits-including-apple-lemon-raspberry-grape-orange-plum-coconut-pineapple-white-currant-strawberry-banana-pomegranat-blackberry-melon-fig-lime-pear-cherry-kiwi_22
+      rect:
+        serializedVersion: 2
+        x: 1389
+        y: 468
+        width: 224
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71eed195555978a4b885680228395d73
+      internalID: 2037461387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fruits-set-white-fruits-including-apple-lemon-raspberry-grape-orange-plum-coconut-pineapple-white-currant-strawberry-banana-pomegranat-blackberry-melon-fig-lime-pear-cherry-kiwi_23
+      rect:
+        serializedVersion: 2
+        x: 1700
+        y: 515
+        width: 211
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4733a0f19bdfbda44b880be1f2532b3a
+      internalID: 1989059718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fruits-set-white-fruits-including-apple-lemon-raspberry-grape-orange-plum-coconut-pineapple-white-currant-strawberry-banana-pomegranat-blackberry-melon-fig-lime-pear-cherry-kiwi_24
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 121
+        width: 174
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e32b4175a9e02aa4591d07969881d3e4
+      internalID: 1375194188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fruits-set-white-fruits-including-apple-lemon-raspberry-grape-orange-plum-coconut-pineapple-white-currant-strawberry-banana-pomegranat-blackberry-melon-fig-lime-pear-cherry-kiwi_25
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 155
+        width: 277
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64751c44763916b468c6f91f3a5dff70
+      internalID: -103181932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fruits-set-white-fruits-including-apple-lemon-raspberry-grape-orange-plum-coconut-pineapple-white-currant-strawberry-banana-pomegranat-blackberry-melon-fig-lime-pear-cherry-kiwi_26
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 118
+        width: 250
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b829309bef0240a418de38dbb8f6c0a8
+      internalID: -849309945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fruits-set-white-fruits-including-apple-lemon-raspberry-grape-orange-plum-coconut-pineapple-white-currant-strawberry-banana-pomegranat-blackberry-melon-fig-lime-pear-cherry-kiwi_27
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 126
+        width: 316
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb4cdf9c72474494d88d29cb4672b816
+      internalID: -1058229276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fruits-set-white-fruits-including-apple-lemon-raspberry-grape-orange-plum-coconut-pineapple-white-currant-strawberry-banana-pomegranat-blackberry-melon-fig-lime-pear-cherry-kiwi_28
+      rect:
+        serializedVersion: 2
+        x: 1386
+        y: 90
+        width: 230
+        height: 269
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4533ba8b5adabc44da0abb6851edc1f5
+      internalID: -1253286571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fruits-set-white-fruits-including-apple-lemon-raspberry-grape-orange-plum-coconut-pineapple-white-currant-strawberry-banana-pomegranat-blackberry-melon-fig-lime-pear-cherry-kiwi_29
+      rect:
+        serializedVersion: 2
+        x: 1683
+        y: 123
+        width: 243
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1e6087d3e1b55e4c8e6fd33e200c5bf
+      internalID: -1944996504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 8bde99c4c516e114a83e855b51615ed8
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      fruits-set-white-fruits-including-apple-lemon-raspberry-grape-orange-plum-coconut-pineapple-white-currant-strawberry-banana-pomegranat-blackberry-melon-fig-lime-pear-cherry-kiwi_0: -1948650032
+      fruits-set-white-fruits-including-apple-lemon-raspberry-grape-orange-plum-coconut-pineapple-white-currant-strawberry-banana-pomegranat-blackberry-melon-fig-lime-pear-cherry-kiwi_1: -755800026
+      fruits-set-white-fruits-including-apple-lemon-raspberry-grape-orange-plum-coconut-pineapple-white-currant-strawberry-banana-pomegranat-blackberry-melon-fig-lime-pear-cherry-kiwi_10: -80786730
+      fruits-set-white-fruits-including-apple-lemon-raspberry-grape-orange-plum-coconut-pineapple-white-currant-strawberry-banana-pomegranat-blackberry-melon-fig-lime-pear-cherry-kiwi_11: -564346917
+      fruits-set-white-fruits-including-apple-lemon-raspberry-grape-orange-plum-coconut-pineapple-white-currant-strawberry-banana-pomegranat-blackberry-melon-fig-lime-pear-cherry-kiwi_12: -1658198141
+      fruits-set-white-fruits-including-apple-lemon-raspberry-grape-orange-plum-coconut-pineapple-white-currant-strawberry-banana-pomegranat-blackberry-melon-fig-lime-pear-cherry-kiwi_13: -572669910
+      fruits-set-white-fruits-including-apple-lemon-raspberry-grape-orange-plum-coconut-pineapple-white-currant-strawberry-banana-pomegranat-blackberry-melon-fig-lime-pear-cherry-kiwi_14: 62280663
+      fruits-set-white-fruits-including-apple-lemon-raspberry-grape-orange-plum-coconut-pineapple-white-currant-strawberry-banana-pomegranat-blackberry-melon-fig-lime-pear-cherry-kiwi_15: 1345371089
+      fruits-set-white-fruits-including-apple-lemon-raspberry-grape-orange-plum-coconut-pineapple-white-currant-strawberry-banana-pomegranat-blackberry-melon-fig-lime-pear-cherry-kiwi_16: -592535592
+      fruits-set-white-fruits-including-apple-lemon-raspberry-grape-orange-plum-coconut-pineapple-white-currant-strawberry-banana-pomegranat-blackberry-melon-fig-lime-pear-cherry-kiwi_17: -285109740
+      fruits-set-white-fruits-including-apple-lemon-raspberry-grape-orange-plum-coconut-pineapple-white-currant-strawberry-banana-pomegranat-blackberry-melon-fig-lime-pear-cherry-kiwi_18: 2140606544
+      fruits-set-white-fruits-including-apple-lemon-raspberry-grape-orange-plum-coconut-pineapple-white-currant-strawberry-banana-pomegranat-blackberry-melon-fig-lime-pear-cherry-kiwi_19: 1789494582
+      fruits-set-white-fruits-including-apple-lemon-raspberry-grape-orange-plum-coconut-pineapple-white-currant-strawberry-banana-pomegranat-blackberry-melon-fig-lime-pear-cherry-kiwi_2: 197855542
+      fruits-set-white-fruits-including-apple-lemon-raspberry-grape-orange-plum-coconut-pineapple-white-currant-strawberry-banana-pomegranat-blackberry-melon-fig-lime-pear-cherry-kiwi_20: -2058090437
+      fruits-set-white-fruits-including-apple-lemon-raspberry-grape-orange-plum-coconut-pineapple-white-currant-strawberry-banana-pomegranat-blackberry-melon-fig-lime-pear-cherry-kiwi_21: -2090916155
+      fruits-set-white-fruits-including-apple-lemon-raspberry-grape-orange-plum-coconut-pineapple-white-currant-strawberry-banana-pomegranat-blackberry-melon-fig-lime-pear-cherry-kiwi_22: 2037461387
+      fruits-set-white-fruits-including-apple-lemon-raspberry-grape-orange-plum-coconut-pineapple-white-currant-strawberry-banana-pomegranat-blackberry-melon-fig-lime-pear-cherry-kiwi_23: 1989059718
+      fruits-set-white-fruits-including-apple-lemon-raspberry-grape-orange-plum-coconut-pineapple-white-currant-strawberry-banana-pomegranat-blackberry-melon-fig-lime-pear-cherry-kiwi_24: 1375194188
+      fruits-set-white-fruits-including-apple-lemon-raspberry-grape-orange-plum-coconut-pineapple-white-currant-strawberry-banana-pomegranat-blackberry-melon-fig-lime-pear-cherry-kiwi_25: -103181932
+      fruits-set-white-fruits-including-apple-lemon-raspberry-grape-orange-plum-coconut-pineapple-white-currant-strawberry-banana-pomegranat-blackberry-melon-fig-lime-pear-cherry-kiwi_26: -849309945
+      fruits-set-white-fruits-including-apple-lemon-raspberry-grape-orange-plum-coconut-pineapple-white-currant-strawberry-banana-pomegranat-blackberry-melon-fig-lime-pear-cherry-kiwi_27: -1058229276
+      fruits-set-white-fruits-including-apple-lemon-raspberry-grape-orange-plum-coconut-pineapple-white-currant-strawberry-banana-pomegranat-blackberry-melon-fig-lime-pear-cherry-kiwi_28: -1253286571
+      fruits-set-white-fruits-including-apple-lemon-raspberry-grape-orange-plum-coconut-pineapple-white-currant-strawberry-banana-pomegranat-blackberry-melon-fig-lime-pear-cherry-kiwi_29: -1944996504
+      fruits-set-white-fruits-including-apple-lemon-raspberry-grape-orange-plum-coconut-pineapple-white-currant-strawberry-banana-pomegranat-blackberry-melon-fig-lime-pear-cherry-kiwi_3: -1619464124
+      fruits-set-white-fruits-including-apple-lemon-raspberry-grape-orange-plum-coconut-pineapple-white-currant-strawberry-banana-pomegranat-blackberry-melon-fig-lime-pear-cherry-kiwi_4: 442598627
+      fruits-set-white-fruits-including-apple-lemon-raspberry-grape-orange-plum-coconut-pineapple-white-currant-strawberry-banana-pomegranat-blackberry-melon-fig-lime-pear-cherry-kiwi_5: 1248059492
+      fruits-set-white-fruits-including-apple-lemon-raspberry-grape-orange-plum-coconut-pineapple-white-currant-strawberry-banana-pomegranat-blackberry-melon-fig-lime-pear-cherry-kiwi_6: 990867845
+      fruits-set-white-fruits-including-apple-lemon-raspberry-grape-orange-plum-coconut-pineapple-white-currant-strawberry-banana-pomegranat-blackberry-melon-fig-lime-pear-cherry-kiwi_7: -1541161246
+      fruits-set-white-fruits-including-apple-lemon-raspberry-grape-orange-plum-coconut-pineapple-white-currant-strawberry-banana-pomegranat-blackberry-melon-fig-lime-pear-cherry-kiwi_8: -1075417465
+      fruits-set-white-fruits-including-apple-lemon-raspberry-grape-orange-plum-coconut-pineapple-white-currant-strawberry-banana-pomegranat-blackberry-melon-fig-lime-pear-cherry-kiwi_9: -1969346244
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

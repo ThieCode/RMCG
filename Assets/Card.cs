@@ -3,28 +3,28 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class Card : MonoBehaviour
 {
     [SerializeField, Range(0.5f, 2)] private float flipDuration = 0.5f;
     [SerializeField] private CardState state;
     [SerializeField] private bool hasBeenMatched = false;
+    [SerializeField] private Image signImage;
     Quaternion hidingRotation;
     Quaternion showingRotation;
     Quaternion lerpedRotation;
     float flipTimer = 0;
     float lerpAmount;
 
-    void OnMouseDown()
+    public void Show()
     {
-        Debug.Log("Pointer Clicked");
         if (state == CardState.Hiding || state == CardState.TransitioningToHiding)
         {
             state = CardState.TransitioningToShowing;
         }
     }
 
-    [ContextMenu("Hide")]
     public void Hide()
     {
         if((state == CardState.Showing || state == CardState.TransitioningToShowing) && !hasBeenMatched)
@@ -65,13 +65,17 @@ public class Card : MonoBehaviour
         flipTimer += Time.deltaTime;
         lerpAmount = flipTimer / flipDuration;
         lerpedRotation = Quaternion.Lerp(start, end, lerpAmount);
-        Debug.Log($"{start} to {end} >>> {lerpedRotation}");
         if (lerpAmount >= 1)
         {
             flipTimer = 0;
             lerpAmount  = 0;
             state = targetState;
         }
+    }
+
+    public void SetSign(Sprite sprite)
+    {
+        signImage.overrideSprite = sprite;
     }
 
     private enum CardState

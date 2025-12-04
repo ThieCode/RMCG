@@ -1,0 +1,12 @@
+{
+    "width" : 4,
+    "height" : 6,
+    "hasACard" : [
+        true, true, true, true,
+        true, true, true, true,
+        true, true, true, true,
+        true, true, true, true,
+        true, true, true, true,
+        true, true, true, true
+    ]
+}

@@ -1,0 +1,9 @@
+{
+    "width" : 3,
+    "height" : 3,
+    "hasACard" : [
+        true, true, true,
+        true, false, true,
+        true, true, true
+    ]
+}
