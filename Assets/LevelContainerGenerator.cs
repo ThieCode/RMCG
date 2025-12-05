@@ -173,12 +173,21 @@ public class LevelContainerGenerator : MonoBehaviour
 
     private void OnEnable()
     {
+        GameEventBus.Subscribe<LevelSelectEvent>(OnLevelSelected);
         GameEventBus.Subscribe<CardClickedEvent>(OnCardPressed);
+    }
+
+    private void OnLevelSelected(LevelSelectEvent @event)
+    {
+        selectedLevel = @event.LevelLayoutJson;
+        GenerateContainer();
+        GenerateCards();
     }
 
     private void OnDisable()
     {
         GameEventBus.Unsubscribe<CardClickedEvent>(OnCardPressed);
+        GameEventBus.Unsubscribe<LevelSelectEvent>(OnLevelSelected);
     }
 
     #region Debug
