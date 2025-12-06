@@ -173,6 +173,7 @@ GameObject:
   - component: {fileID: 5276011212291226800}
   - component: {fileID: 6843709601841584060}
   - component: {fileID: 6843709601841584063}
+  - component: {fileID: 8999019146316642439}
   m_Layer: 3
   m_Name: Card
   m_TagString: Untagged
@@ -275,3 +276,24 @@ MonoBehaviour:
   state: 0
   hasBeenMatched: 0
   signImage: {fileID: 225440458021806655}
+--- !u!95 &8999019146316642439
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5924718742573882725}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a3ef77ec93d838042b5c9c07f5b9ab4d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

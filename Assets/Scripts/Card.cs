@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GameEvents;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -11,11 +12,13 @@ public class Card : MonoBehaviour
     [SerializeField] private CardState state;
     [SerializeField] private bool hasBeenMatched = false;
     [SerializeField] private Image signImage;
+    [SerializeField] private int signID;
     Quaternion hidingRotation;
     Quaternion showingRotation;
     Quaternion lerpedRotation;
     float flipTimer = 0;
     float lerpAmount;
+    private Animator animator;
 
     public void Show()
     {
@@ -38,6 +41,13 @@ public class Card : MonoBehaviour
         lerpedRotation = hidingRotation = transform.localRotation;
         showingRotation = hidingRotation * Quaternion.Euler(180, 0f, 0f);
         flipTimer = 0;
+        GameEventBus.Subscribe<CardsMatchedEvent>(OnCardsMatched);
+        animator = GetComponent<Animator>();
+    }
+
+    private void OnDestroy()
+    {
+        GameEventBus.Subscribe<CardsMatchedEvent>(OnCardsMatched);
     }
 
     private void Update()
@@ -60,6 +70,17 @@ public class Card : MonoBehaviour
         transform.localRotation = lerpedRotation;
     }
 
+    private void OnCardsMatched(CardsMatchedEvent @event)
+    {
+        if (@event.CardA == this || @event.CardB == this)
+        {
+            GetComponent<BoxCollider>().enabled = false;
+            animator.SetTrigger("Match");
+        }
+    }
+
+    public void DestroySelf() => Destroy(gameObject);
+
     private void CalculateLerpedRotaion(Quaternion start, Quaternion end, CardState targetState)
     {
         flipTimer += Time.deltaTime;
@@ -73,9 +94,15 @@ public class Card : MonoBehaviour
         }
     }
 
-    public void SetSign(Sprite sprite)
+    public void SetSign(Sprite sprite, int signID)
     {
         signImage.overrideSprite = sprite;
+        this.signID = signID;
+    }
+
+    public bool EqualsInSprite(Card cardB)
+    {
+        return signID == cardB.signID;
     }
 
     private enum CardState

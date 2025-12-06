@@ -6,7 +6,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using static UnityEngine.UI.Image;
 
-public class LevelContainerGenerator : MonoBehaviour
+public class LevelController : MonoBehaviour
 {
     [Header("Grid Settings")]
     private float cellSize = 1f;
@@ -25,6 +25,8 @@ public class LevelContainerGenerator : MonoBehaviour
     [SerializeField] private TextAsset selectedLevel;
     private List<Sprite> availableSigns = new List<Sprite>();
     [SerializeField] List<Card> showingCards = new List<Card>();
+    List<Card> generatedCards;
+    bool isPaused = false;
 
     private void GenerateContainer()
     {
@@ -38,9 +40,6 @@ public class LevelContainerGenerator : MonoBehaviour
         int width = levelLayout.width;
         int height = levelLayout.height;
 
-        // --- CENTERING ---
-        // Grid indices go from 0..width-1 and 0..height-1
-        // Center in world space is halfway between min and max indices.
         float centerX = (width - 1) * 0.5f * cellSize;
         float centerZ = (height - 1) * 0.5f * cellSize;
 
@@ -53,26 +52,22 @@ public class LevelContainerGenerator : MonoBehaviour
                 bool isBottom = (y == 0);
                 bool isTop = (y == height - 1);
 
-                // Centered position
                 Vector3 pos = new Vector3(
                     x * cellSize - centerX + containerParent.position.x,
                     0f,
                     y * cellSize - centerZ + containerParent.position.z
                 );
 
-                // 1. CORNERS
                 if (isLeft && isBottom) InstantiatePart(cornerPrefab, pos, 180).name = $"Corner_rot{180}";
                 if (isRight && isBottom) InstantiatePart(cornerPrefab, pos, 90).name = $"Corner_rot{90}";
                 if (isRight && isTop) InstantiatePart(cornerPrefab, pos, 0).name = $"Corner_rot{0}";
                 if (isLeft && isTop) InstantiatePart(cornerPrefab, pos, 270).name = $"Corner_rot{270}";
 
-                // 2. EDGES
                 if (isBottom) InstantiatePart(edgePrefab, pos, 180).name = $"Edge_{x}_{y}";
                 if (isTop) InstantiatePart(edgePrefab, pos, 0).name = $"Edge_{x}_{y}";
                 if (isLeft) InstantiatePart(edgePrefab, pos, 270).name = $"Edge_{x}_{y}";
                 if (isRight) InstantiatePart(edgePrefab, pos, 90).name = $"Edge_{x}_{y}";
 
-                // 3. INNER TILE (always)
                 InstantiatePart(tilePrefab, pos, 0).name = $"Tile_{x}_{y}";
             }
         }
@@ -84,8 +79,8 @@ public class LevelContainerGenerator : MonoBehaviour
 
         int width = levelLayout.width;
         int height = levelLayout.height;
-        List<Card> cardsToPopulate = new List<Card>();
-        // Same centering as container
+        generatedCards = new List<Card>();
+
         float centerX = (width-1) * 0.5f * cellSize;
         float centerZ = (height-1) * 0.5f * cellSize;
 
@@ -106,53 +101,47 @@ public class LevelContainerGenerator : MonoBehaviour
                     var card = InstantiatePart(cardPrefab, pos, 0);
                     card.name = $"Card_{x}_{y}";
                     card.transform.localPosition += Vector3.up * cardYDisplacement;
-                    cardsToPopulate.Add(card.GetComponent<Card>());
+                    generatedCards.Add(card.GetComponent<Card>());
                 }
             }
         }
 
         float overridenScale = 1 * defaultScaleFactor / (Mathf.Max(width, height) + 1);
         containerParent.localScale = new Vector3(overridenScale, 1, overridenScale);
-        PopulateCardsSigns(cardsToPopulate);
+        PopulateCardsSigns();
     }
 
-    private void PopulateCardsSigns(List<Card> cardsToPopulate)
+    private void PopulateCardsSigns()
     {
+        var cardsToPopulate = new List<Card>(generatedCards);
         availableSigns = new List<Sprite>();
         availableSigns.AddRange(gameSigns);
         int requiredSignsAmount = cardsToPopulate.Count / 2;
+        int signID = 0;
         for (int i = 0; i < requiredSignsAmount; i++)
         {
             var signIndex = UnityEngine.Random.Range(0, availableSigns.Count);
             var cardIndex = UnityEngine.Random.Range(0, cardsToPopulate.Count);
-            cardsToPopulate[cardIndex].SetSign(availableSigns[signIndex]);
+            cardsToPopulate[cardIndex].SetSign(availableSigns[signIndex], signID);
             cardsToPopulate.RemoveAt(cardIndex);
             cardIndex = UnityEngine.Random.Range(0, cardsToPopulate.Count);
-            cardsToPopulate[cardIndex].SetSign(availableSigns[signIndex]);
+            cardsToPopulate[cardIndex].SetSign(availableSigns[signIndex], signID);
             cardsToPopulate.RemoveAt(cardIndex);
             availableSigns.RemoveAt(signIndex);
+            signID++;
         }
     }
 
     private GameObject InstantiatePart(GameObject partPrefab, Vector3 pos, float yRot)
     {
         var part = Instantiate(partPrefab, pos, Quaternion.identity, containerParent);
-        // Your parts seem to be modeled laying down, so keep the -90 on X,
-        // and just vary Y by the given rotation.
         part.transform.localRotation *= Quaternion.Euler(-90, yRot, 0);
         return part;
     }
 
-    private Sprite GetRandomAvailableSign()
-    {
-        var index = UnityEngine.Random.Range(0, availableSigns.Count);
-        var sprite = availableSigns[index];
-        availableSigns.RemoveAt(index);
-        return sprite;
-    }
-
     private void OnCardPressed(CardClickedEvent @event)
     {
+        if (isPaused) return;
         if (showingCards.Count > 0 && showingCards.Contains(@event.Card)) return;
 
         if (showingCards.Count == 2)
@@ -167,7 +156,23 @@ public class LevelContainerGenerator : MonoBehaviour
         if (showingCards.Count <= 1)
         {
             @event.Card.Show();
+            GameEventBus.Raise(new CardFlippedEvent(@event.Card));
             showingCards.Add(@event.Card);
+
+            if(showingCards.Count == 2)
+            {
+                var cardA = showingCards[0];
+                var cardB = showingCards[1];
+
+                if(cardA.EqualsInSprite(cardB))
+                {
+                    GameEventBus.Raise(new CardsMatchedEvent(cardA, cardB));
+                    showingCards.Clear();
+                    generatedCards.Remove(cardA);
+                    generatedCards.Remove(cardB);
+                    if (generatedCards.Count == 0) GameEventBus.Raise(new LevelSolvedEvent());
+                }
+            }
         }
     }
 
@@ -175,6 +180,18 @@ public class LevelContainerGenerator : MonoBehaviour
     {
         GameEventBus.Subscribe<LevelSelectEvent>(OnLevelSelected);
         GameEventBus.Subscribe<CardClickedEvent>(OnCardPressed);
+        GameEventBus.Subscribe<PauseMenuOpenEvent>(OnPauseMenuOpened);
+        GameEventBus.Subscribe<PauseMenuCloseEvent>(OnPauseMenuClosed);
+    }
+
+    private void OnPauseMenuOpened(PauseMenuOpenEvent @event)
+    {
+        isPaused = true;
+    }
+
+    private void OnPauseMenuClosed(PauseMenuCloseEvent @event)
+    {
+        isPaused = false;
     }
 
     private void OnLevelSelected(LevelSelectEvent @event)
@@ -190,8 +207,6 @@ public class LevelContainerGenerator : MonoBehaviour
         GameEventBus.Unsubscribe<LevelSelectEvent>(OnLevelSelected);
     }
 
-    #region Debug
-    [ContextMenu("Clear Container")]
     public void ClearContainer()
     {
         containerParent.localScale = Vector3.one;
@@ -202,15 +217,6 @@ public class LevelContainerGenerator : MonoBehaviour
             DestroyImmediate(containerParent.GetChild(i).gameObject);
 
     }
-
-    [ContextMenu("Generate Level")]
-    public void GenerateLevelTest()
-    {
-        GenerateContainer();
-        GenerateCards();
-
-    }
-    #endregion
 }
 
 public struct LevelLayout
